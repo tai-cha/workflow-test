@@ -16,6 +16,5 @@ jobs:
       - name: Sync with upstream repository
         uses: nadesskey/create-upstream-sync-pr-action@v0  # アクションリポジトリを指定
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           base: 'tai-cha' # Branch to create PR
           head: 'master' # Branch to merge (should be upstream branch name)
